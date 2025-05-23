@@ -1,74 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Worcester Cleaners | Sparkling Clean Spaces</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <!-- SwiperJS for testimonials -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Lottie for animations -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worcester Cleaners</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Worcester Cleaners</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-        <button class="cta-button">Book Now</button>
-    </nav>
+  <header class="hero" data-aos="fade-down">
+    <img src="images/logo.png" alt="Worcester Cleaners Logo" class="logo">
+    <h1>Sparkling Clean Spaces in Worcester</h1>
+    <p>Professional cleaning for homes and businesses.</p>
+    <a href="#services" class="cta">Book Now</a>
+  </header>
 
-    <!-- Hero Section (Animated) -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Sparkling Clean Spaces in Worcester</h1>
-            <p class="slide-up">We make your home shine like new!</p>
-            <button class="cta-button pulse">Get a Free Quote</button>
-        </div>
-        <lottie-player 
-            src="assets/animations/cleaning-lady.json" 
-            background="transparent" 
-            speed="1" 
-            loop 
-            autoplay>
-        </lottie-player>
-    </section>
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card"><i class="fa-solid fa-house"></i><p>Residential Cleaning</p></div>
+      <div class="card"><i class="fa-solid fa-building"></i><p>Commercial Cleaning</p></div>
+      <div class="card"><i class="fa-solid fa-broom"></i><p>Deep Cleaning</p></div>
+    </div>
+  </section>
 
-    <!-- Services Section (Hover Effects) -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card hover-grow">
-                <img src="assets/images/residential-icon.svg" alt="Residential Cleaning">
-                <h3>Residential Cleaning</h3>
-                <p>Deep cleaning for homes & apartments.</p>
-            </div>
-            <!-- Add more services -->
-        </div>
-    </section>
+  <section class="team" data-aos="fade-right">
+    <h2>Meet the Team</h2>
+    <p>Experienced and friendly staff who care about your space.</p>
+  </section>
 
-    <!-- Testimonials (Swiper Slider) -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">"Best cleaners in town!" — Sarah</div>
-                <div class="swiper-slide">"Reliable and affordable!" — John</div>
-            </div>
-        </div>
-    </section>
+  <section class="testimonials" data-aos="zoom-in">
+    <h2>Testimonials</h2>
+    <blockquote>"They left my house sparkling! Highly recommended." – Lisa M.</blockquote>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Worcester Cleaners</p>
-    </footer>
+  <footer>
+    <p>Contact us: info@worcestercleaners.com | (123) 456-7890</p>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
