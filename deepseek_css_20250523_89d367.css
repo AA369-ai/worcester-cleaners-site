@@ -1,0 +1,41 @@
+:root {
+    --primary: #2E86AB;
+    --secondary: #F5F5F5;
+    --accent: #FF9F1C;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background: var(--secondary);
+}
+
+.service-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+}
